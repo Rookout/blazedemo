@@ -30,6 +30,7 @@ sourceSets {
 jar {
     baseName = 'blaze-demo-api'
     version =  '1.0'
+    from sourceSets.main.allSource
 }
 
 bootRepackage {
@@ -61,7 +62,7 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
     compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2'
     compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-hibernate4'
-    compile group: 'mysql', name: 'mysql-connector-java'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.15'
     compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
 
     compile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.3'

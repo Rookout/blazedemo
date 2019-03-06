@@ -1,14 +1,14 @@
 spring:
     application:
-        name: blazemetter
+        name: blazemeter
     security:
         username: blaze
-        password: Q1w2e3r4
+        password: blaze
         role: ADMIN
     datasource:
-        url: jdbc:mysql://localhost/BlazeDemo?useSSL=false
+        url: jdbc:mysql://host.docker.internal/BlazeDemo?useSSL=false
         username: root
-        password: B00Xware
+        password: toor
         driver-class-name: com.mysql.jdbc.Driver
         testWhileIdle: true
         validationQuery: SELECT 1
