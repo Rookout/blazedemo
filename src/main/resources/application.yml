@@ -6,7 +6,7 @@ spring:
         password: blaze
         role: ADMIN
     datasource:
-        url: jdbc:mysql://localhost/BlazeDemo?useSSL=false
+        url: jdbc:mysql://mysql/BlazeDemo?useSSL=false
         username: root
         password: toor
         driver-class-name: com.mysql.jdbc.Driver
