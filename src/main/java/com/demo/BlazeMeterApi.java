@@ -12,10 +12,16 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import com.rookout.rook.API;
+
 @EnableSwagger2
 @SpringBootApplication
 public class BlazeMeterApi {
     public static void main(String[] args) {
+        String ROOKOUT_TOKEN = System.getenv("ROOKOUT_TOKEN");
+        if (ROOKOUT_TOKEN != null && !ROOKOUT_TOKEN.equals("")) {
+            API.start();
+        }
         SpringApplication.run(BlazeMeterApi.class, args);
     }
 
