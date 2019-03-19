@@ -111,3 +111,4 @@ task loadTest(type: JavaExec) {
             "--bodies-folder", sourceSets.test.resources.srcDirs.toList().first().toString() + "/gatling/bodies",
     ]
 }
+
