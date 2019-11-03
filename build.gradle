@@ -57,7 +57,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile group: 'com.rookout', name: 'rook', version: '0.1.62'
+    compile group: 'com.rookout', name: 'rook', version: '0.1.96'
 
     compile group: 'org.springframework', name: 'spring-core'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc'
